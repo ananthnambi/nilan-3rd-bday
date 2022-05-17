@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+<link href="https://fonts.cdnfonts.com/css/magneto" rel="stylesheet">
+<link rel="shortcut icon" href="/img/Red-Letter-N.ico">
+<title>Nilan's 3rd Birthday Party!</title>
+
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/confetti.js"></script>
+<script type="text/javascript">
+
+  (function(){
+
+      show = function(){
+        setTimeout(hide, 3000); // 5 seconds
+      },
+
+      hide = function(){
+    	  document.getElementById("myDiv").style.display = "none";
+    	  document.getElementById("parallax").style.visibility = "visible";
+      };
+
+    show();
+  })();
+
+</script>
+<style>
+.myDiv {
+	position: fixed;
+	margin-top: 100px;
+	margin-left: 10%;
+	width: 100%;
+	display:block; 
+	z-index: +1;
+}
+.parallax {
+	/* The image used */
+	background: #CF1F2D;
+	/* Create the parallax scrolling effect */
+	/*background-attachment: fixed;*/
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	visibility: hidden;
+}
+
+.center {
+	text-align : center;
+	margin-left: 12%;
+	/*bottom: 23%;
+	position: fixed;*/
+	font-size: 50px;
+	width: 80%;
+	color: #F1E467;
+	font-family: magneto;
+}
+
+.link {
+	font-style: italic;
+}
+
+/* unvisited link */
+a:link {
+  color: #60889E;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+}
+
+/* mouse over link */
+a:hover {
+  color: yellow;
+}
+
+/* selected link */
+a:active {
+  color: brown;
+}
+
+.title {
+	font-size: 88px;
+}
+
+.logo {
+    width: 75%;
+    height: 50%;
+}
+.flag {
+    width: 50%;
+    height: 25%;
+    margin-left: 25%;
+}
+.banner {
+    width:100%;
+    max-height: 125px;
+}
+</style>
+</head>
+
+<body>
+	<div id="myDiv" class="myDiv">
+		<img src="/img/onmyway.gif" >
+	</div>
+	<div class="parallax" id="parallax">
+		<img class="banner" src="/img/check_banner.png" >
+		<header class="center">
+		<img class="logo" src="/img/Nilan_logo.png" >
+		<div class="title" >is<br>turning 3 !</div></header>
+		<img class="center logo" src="/img/pngegg.png" >
+		<img class="center flag" src="/img/checkered_flag.png" >
+		<br>
+		<footer class="center">The terrible twos are officially over!<br><br>
+			Join us for Nilan's 3rd birthday party at Palmshore, Egmore at 6PM on February 13th
+			<br><br>
+			Venue : <a class="link" href="https://goo.gl/maps/pQUr5mP7fSJoHwkg7">Palmshore, Egmore, Chennai</a><br>
+			Timing : <a class="link" href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NjRyajhkcjY2MHBtOGI5ajY4cmowYjlrNzVqM2diOXBjb3IzZWJiMjZzczNjZHIyNmdyM2VjcjI2OCBhbmFudGhuYW1iaUBt&tmsrc=ananthnambi%40gmail.com">Feb 13th, Sunday, 6 PM</a></footer><br>
+		<img class="banner" src="/img/check_banner.png" >	
+	</div>
+</body>
+</html>
